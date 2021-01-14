@@ -25,14 +25,14 @@ app.use(express.static(publicDirectoryPath));
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather',
-        name: 'Shengkai Xu'
+        name: 'Jack Xu'
     });
 })
 
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About Me',
-        name: 'Shengkai Xu'
+        name: 'Jack Xu'
     });
 })
 
@@ -40,7 +40,7 @@ app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Help',
         helpText: 'Come here for help',
-        name: 'Shengkai Xu'
+        name: 'Jack Xu'
     });
 })
 
@@ -87,7 +87,7 @@ app.get('/products', (req, res) => {
 app.get('/help/*', (req, res) => {
     res.render('404', {
         title: '404',
-        name: 'Shengkai Xu',
+        name: 'Jack Xu',
         errorMessage: 'Help article not found'
     });
 })
@@ -95,7 +95,7 @@ app.get('/help/*', (req, res) => {
 app.get('*', (req, res) => {
     res.render('404', {
         title: '404',
-        name: 'Shengkai Xu',
+        name: 'Jack Xu',
         errorMessage: 'Page not found'
     });
 })
